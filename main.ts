@@ -66,6 +66,8 @@ function go () {
 let pwm = 0
 stop()
 let start1 = 0
+go()
+basic.pause(2000)
 basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P8) == 0) {
         go()
@@ -74,15 +76,9 @@ basic.forever(function () {
     } else if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P8) == 1) {
         left()
     } else if (pins.digitalReadPin(DigitalPin.P1) == 1 && pins.digitalReadPin(DigitalPin.P8) == 1) {
-        if (start1 == 3) {
-            go()
-            basic.pause(1000)
-            stop()
-            basic.pause(9999999999999999999999999999999999999999999)
-        } else {
-            start1 += 1
-            go()
-            basic.pause(2000)
-        }
+        go()
+        basic.pause(500)
+        stop()
+        basic.pause(999999999)
     }
 })
