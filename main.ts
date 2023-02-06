@@ -16,6 +16,21 @@ function right () {
     pwm - 30
     )
 }
+function back () {
+    pwm = 150
+    sensors.DDMmotor(
+    AnalogPin.P13,
+    1,
+    AnalogPin.P14,
+    100
+    )
+    sensors.DDMmotor(
+    AnalogPin.P15,
+    0,
+    AnalogPin.P16,
+    100
+    )
+}
 function left () {
     pwm += 30
     if (pwm >= 255) {
@@ -64,21 +79,40 @@ function go () {
     )
 }
 let pwm = 0
+go()
+basic.pause(3500)
 stop()
-let start1 = 0
+right()
+basic.pause(1200)
+go()
+basic.pause(1000)
+stop()
+back()
+basic.pause(3000)
+stop()
+go()
+basic.pause(1500)
+stop()
+left()
+basic.pause(1400)
+stop()
+go()
+basic.pause(1400)
+stop()
+right()
+basic.pause(1200)
+stop()
+back()
+basic.pause(2200)
 go()
 basic.pause(2000)
+stop()
+left()
+basic.pause(1200)
+stop()
+go()
+basic.pause(1000)
+stop()
 basic.forever(function () {
-    if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P8) == 0) {
-        go()
-    } else if (pins.digitalReadPin(DigitalPin.P1) == 1 && pins.digitalReadPin(DigitalPin.P8) == 0) {
-        right()
-    } else if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P8) == 1) {
-        left()
-    } else if (pins.digitalReadPin(DigitalPin.P1) == 1 && pins.digitalReadPin(DigitalPin.P8) == 1) {
-        go()
-        basic.pause(500)
-        stop()
-        basic.pause(999999999)
-    }
+	
 })
