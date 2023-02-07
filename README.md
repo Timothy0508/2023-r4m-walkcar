@@ -23,7 +23,7 @@
 此影像顯示了主分支中最後一次提交的方塊程式碼。
 此影像可能需要幾分鐘的時間重新整理。
 
-![各個程式積木渲染後的視圖](https://github.com/timothy0508/2023-r4m-walkcar/raw/master/.github/makecode/blocks.png)
+![各個程式積木渲染後的視圖](https://github.com/Timothy0508/2023-r4m-walkcar/blob/Anvanced/.github/makecode/blocks.png)
 
 #### 中繼資料 (用於搜索、渲染)
 
