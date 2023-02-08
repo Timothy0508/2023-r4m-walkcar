@@ -2,7 +2,7 @@ makecode:
   target: microbit
   platform: microbit
   home_url: https://makecode.microbit.org/
-theme: just-the-docs/just-the-docs@main
+remote_theme: just-the-docs/just-the-docs@main
 include:
   - assets
   - README.md
