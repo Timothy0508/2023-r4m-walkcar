@@ -81,20 +81,20 @@ function go () {
 let pwm = 0
 let operation = 0
 go()
-basic.pause(1000)
+basic.pause(200)
 basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P8) == 0) {
         go()
     } else if (pins.digitalReadPin(DigitalPin.P1) == 1 && pins.digitalReadPin(DigitalPin.P8) == 0) {
         right()
-        basic.pause(100)
-        stop()
     } else if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P8) == 1) {
         left()
     } else if (pins.digitalReadPin(DigitalPin.P1) == 1 && pins.digitalReadPin(DigitalPin.P8) == 1) {
         go()
         basic.pause(500)
         operation += 1
+        stop()
+        basic.pause(500)
         if (operation == 1) {
             right()
             basic.pause(2000)
@@ -112,7 +112,7 @@ basic.forever(function () {
             stop()
         } else if (operation == 2) {
             right()
-            basic.pause(1000)
+            basic.pause(1500)
             stop()
             back()
             basic.pause(3000)
@@ -130,6 +130,30 @@ basic.forever(function () {
             basic.pause(3000)
             stop()
             go()
+            basic.pause(3000)
+            stop()
+            left()
+            basic.pause(1500)
+            stop()
+        } else if (operation == 4) {
+            right()
+            basic.pause(1500)
+            stop()
+            go()
+            basic.pause(1500)
+            back()
+            basic.pause(3000)
+            stop()
+            left()
+            basic.pause(1500)
+            stop()
+        } else if (operation == 5) {
+            right()
+            basic.pause(1500)
+            stop()
+            go()
+            basic.pause(1500)
+            back()
             basic.pause(3000)
             stop()
             left()
