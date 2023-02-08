@@ -2,8 +2,15 @@ makecode:
   target: microbit
   platform: microbit
   home_url: https://makecode.microbit.org/
-remote_theme: just-the-docs/just-the-docs@main
+theme: just-the-docs
 include:
   - assets
   - README.md
   - LICENCE
+
+logo: "/assets/images/logo.png"
+favicon_ico: "/assets/images/logo.ico"
+aux_links:
+  "Project on GitHub":
+    - "//github.com/Timothy0508/2023-r4m-walkcar"
+aux_links_new_tab: true
