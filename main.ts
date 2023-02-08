@@ -95,6 +95,7 @@ basic.forever(function () {
         go()
         basic.pause(500)
         operation += 1
+        basic.showIcon(IconNames.Yes)
         if (operation == 1) {
             right()
             basic.pause(2000)
@@ -112,7 +113,7 @@ basic.forever(function () {
             stop()
         } else if (operation == 2) {
             right()
-            basic.pause(1000)
+            basic.pause(1500)
             stop()
             back()
             basic.pause(3000)
