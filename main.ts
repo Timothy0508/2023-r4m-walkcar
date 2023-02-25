@@ -16,14 +16,6 @@ function right () {
     pwm - 30
     )
 }
-function modaup () {
-    sensors.DDMmotor(
-    AnalogPin.P12,
-    0,
-    AnalogPin.P2,
-    150
-    )
-}
 function back () {
     pwm = 150
     sensors.DDMmotor(
@@ -69,14 +61,6 @@ function stop () {
     0,
     AnalogPin.P16,
     0
-    )
-}
-function modad () {
-    sensors.DDMmotor(
-    AnalogPin.P12,
-    1,
-    AnalogPin.P2,
-    150
     )
 }
 function go () {
