@@ -79,6 +79,8 @@ function go () {
     )
 }
 let pwm = 0
+pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
+let strbtn = 0
 let operation = 0
 let redytostop = 0
 go()
@@ -94,21 +96,22 @@ basic.forever(function () {
         go()
         basic.pause(200)
         operation += 1
+        basic.pause(100)
         if (operation == 1) {
             right()
             // 第一個路口右轉
-            basic.pause(1100)
+            basic.pause(1150)
             go()
             // 推動進去A區
-            basic.pause(1100)
+            basic.pause(500)
             stop()
             back()
             // 從A區向後推動D區
-            basic.pause(2500)
+            basic.pause(2700)
             stop()
             go()
             // 從D區到A區中間第一個路口
-            basic.pause(1200)
+            basic.pause(1300)
             stop()
             left()
             // 從第一路口左轉朝向正前方
