@@ -96,9 +96,9 @@ basic.forever(function () {
         operation += 1
         if (operation == 1) {
             right()
-            basic.pause(1500)
+            basic.pause(1600)
             go()
-            basic.pause(1000)
+            basic.pause(1100)
             stop()
             back()
             basic.pause(2500)
@@ -111,7 +111,7 @@ basic.forever(function () {
             stop()
         } else if (operation == 2) {
             right()
-            basic.pause(1400)
+            basic.pause(1500)
             stop()
             back()
             basic.pause(2000)
