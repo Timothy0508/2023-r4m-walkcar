@@ -97,7 +97,7 @@ basic.forever(function () {
         if (operation == 1) {
             right()
             // 第一個路口右轉
-            basic.pause(1500)
+            basic.pause(1300)
             go()
             // 推動進去A區
             basic.pause(1100)
