@@ -107,9 +107,11 @@ basic.forever(function () {
             basic.pause(2500)
             stop()
             go()
+            // 從D區到A區中間的路口(First)
             basic.pause(1200)
             stop()
             left()
+            // 左轉朝向正前方
             basic.pause(1250)
             stop()
         } else if (operation == 2) {
