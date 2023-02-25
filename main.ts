@@ -96,11 +96,14 @@ basic.forever(function () {
         operation += 1
         if (operation == 1) {
             right()
+            // 第一條黑線的右轉
             basic.pause(1500)
             go()
+            // 推進A區
             basic.pause(1100)
             stop()
             back()
+            // 從A區向後推到D區
             basic.pause(2500)
             stop()
             go()
