@@ -97,7 +97,7 @@ basic.forever(function () {
         if (operation == 1) {
             right()
             // 第一個路口右轉
-            basic.pause(1300)
+            basic.pause(1200)
             go()
             // 推動進去A區
             basic.pause(1100)
@@ -176,12 +176,9 @@ basic.forever(function () {
             basic.pause(1200)
             back()
             // 從E區後退推進ParkingPlace
-            basic.pause(1200)
-            right()
-            basic.pause(800)
-        } else if (operation >= 8) {
+            basic.pause(2000)
             stop()
-            basic.pause(9999999999999999999999999999999999)
+            basic.pause(999999999999999999)
         }
     }
 })
