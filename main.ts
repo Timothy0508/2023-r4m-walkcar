@@ -111,7 +111,7 @@ basic.forever(function () {
             stop()
         } else if (operation == 2) {
             right()
-            basic.pause(1500)
+            basic.pause(1600)
             stop()
             back()
             basic.pause(2000)
