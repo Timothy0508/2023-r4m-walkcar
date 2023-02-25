@@ -127,23 +127,29 @@ basic.forever(function () {
             basic.pause(1200)
             stop()
             left()
+            // 從第二路口左轉朝向正前方
             basic.pause(1100)
             stop()
         } else if (operation == 3) {
             right()
+            // 在第三路口右轉
             basic.pause(1400)
             stop()
             back()
+            // 從C區正前方後退推動C區
             basic.pause(2000)
             stop()
             go()
+            // 從C區向前至第三路口
             basic.pause(1200)
             stop()
             left()
+            // 從第三路口朝向正前方
             basic.pause(1200)
             stop()
         } else if (operation == 4) {
             right()
+            // 從第四路口轉向至B區方向
             basic.pause(1200)
             stop()
             go()
