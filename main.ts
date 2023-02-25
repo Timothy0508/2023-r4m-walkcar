@@ -21,7 +21,7 @@ function modaup () {
     AnalogPin.P12,
     0,
     AnalogPin.P2,
-    0
+    150
     )
 }
 function back () {
@@ -74,9 +74,9 @@ function stop () {
 function modad () {
     sensors.DDMmotor(
     AnalogPin.P12,
-    0,
+    1,
     AnalogPin.P2,
-    0
+    150
     )
 }
 function go () {
