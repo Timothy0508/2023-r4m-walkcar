@@ -96,22 +96,22 @@ basic.forever(function () {
         operation += 1
         if (operation == 1) {
             right()
-            // 第一條黑線的右轉
+            // 第一個路口右轉
             basic.pause(1500)
             go()
-            // 推進A區
+            // 推動進去A區
             basic.pause(1100)
             stop()
             back()
-            // 從A區向後推到D區
+            // 從A區向後推動D區
             basic.pause(2500)
             stop()
             go()
-            // 從D區到A區中間的路口(First)
+            // 從D區到A區中間第一個路口
             basic.pause(1200)
             stop()
             left()
-            // 左轉朝向正前方
+            // 從第一路口左轉朝向正前方
             basic.pause(1250)
             stop()
         } else if (operation == 2) {
@@ -120,8 +120,10 @@ basic.forever(function () {
             basic.pause(1600)
             stop()
             back()
+            // 自F區前方後退推動F區
             basic.pause(2000)
             go()
+            // 從F區前進到第二路口
             basic.pause(1200)
             stop()
             left()
