@@ -153,22 +153,29 @@ basic.forever(function () {
             basic.pause(1200)
             stop()
             go()
+            // 從第四路口推進B區
             basic.pause(1000)
             back()
+            // 後退推進G區
             basic.pause(3200)
             stop()
             go()
+            // 離開G區前進到第四路口
             basic.pause(1200)
             left()
+            // 第四路口朝向正前方
             basic.pause(1200)
             stop()
         } else if (operation == 5) {
             right()
+            // 從第五路口右轉朝向E區
             basic.pause(1200)
             stop()
             go()
+            // 前進推進E區
             basic.pause(1200)
             back()
+            // 從E區後退推進ParkingPlace
             basic.pause(1200)
             right()
             basic.pause(800)
