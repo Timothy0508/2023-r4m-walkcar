@@ -116,6 +116,7 @@ basic.forever(function () {
             stop()
         } else if (operation == 2) {
             right()
+            // 自第二路口轉向F區正前方
             basic.pause(1600)
             stop()
             back()
