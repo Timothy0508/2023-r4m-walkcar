@@ -115,7 +115,7 @@ basic.forever(function () {
                 stop()
                 back()
                 // 從A區向後推動D區
-                basic.pause(2100)
+                basic.pause(2300)
                 stop()
                 go()
                 // 從D區到A區中間第一個路口
