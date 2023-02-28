@@ -86,12 +86,9 @@ let strbtn = 0
 pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
 strbtn = 0
 let operation = 0
-let redytostop = 0
-let turn = 0
 if (strbtn == 1) {
     go()
     basic.pause(1000)
-    turn = 0
 }
 basic.forever(function () {
     if (strbtn == 1) {
