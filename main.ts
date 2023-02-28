@@ -128,7 +128,7 @@ basic.forever(function () {
             } else if (operation == 2) {
                 right()
                 // 自第二路口轉向F區正前方
-                basic.pause(2000)
+                basic.pause(2200)
                 stop()
                 back()
                 // 自F區前方後退推動F區
