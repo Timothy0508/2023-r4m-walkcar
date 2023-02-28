@@ -64,7 +64,10 @@ function stop () {
     )
 }
 input.onPinPressed(TouchPin.P2, function () {
-    strbtn = 1
+    basic.pause(100)
+    strbtn += 1
+    basic.pause(2100)
+    strbtn += 1
 })
 function go () {
     pwm = 150
@@ -82,16 +85,15 @@ function go () {
     )
 }
 let pwm = 0
-let strbtn = 0
 pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
-strbtn = 0
+let strbtn = 0
 let operation = 0
 if (strbtn == 1) {
     go()
     basic.pause(2000)
 }
 basic.forever(function () {
-    if (strbtn == 1) {
+    if (strbtn == 2) {
         if (pins.digitalReadPin(DigitalPin.P1) == 0 && pins.digitalReadPin(DigitalPin.P8) == 0) {
             go()
         } else if (pins.digitalReadPin(DigitalPin.P1) == 1 && pins.digitalReadPin(DigitalPin.P8) == 0) {
