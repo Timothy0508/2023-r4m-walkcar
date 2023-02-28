@@ -125,22 +125,6 @@ basic.forever(function () {
                 // 從第一路口左轉朝向正前方
                 basic.pause(2000)
                 stop()
-            } else if (operation == 2) {
-                right()
-                // 自第二路口轉向F區正前方
-                basic.pause(2200)
-                stop()
-                back()
-                // 自F區前方後退推動F區
-                basic.pause(2000)
-                go()
-                // 從F區前進到第二路口
-                basic.pause(1500)
-                stop()
-                left()
-                // 從第二路口左轉朝向正前方
-                basic.pause(2000)
-                stop()
             } else if (operation == 3) {
                 right()
                 // 在第三路口右轉
@@ -168,14 +152,11 @@ basic.forever(function () {
                 basic.pause(1000)
                 back()
                 // 後退推進G區
-                basic.pause(3200)
+                basic.pause(1600)
                 stop()
-                go()
-                // 離開G區前進到第四路口
-                basic.pause(1200)
                 left()
-                // 第四路口朝向正前方
-                basic.pause(1200)
+                // 前進回正
+                basic.pause(1600)
                 stop()
             } else if (operation == 5) {
                 right()
