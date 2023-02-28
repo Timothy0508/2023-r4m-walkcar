@@ -88,7 +88,7 @@ strbtn = 0
 let operation = 0
 if (strbtn == 1) {
     go()
-    basic.pause(1000)
+    basic.pause(2000)
 }
 basic.forever(function () {
     if (strbtn == 1) {
