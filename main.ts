@@ -16,9 +16,6 @@ function right () {
     pwm - 30
     )
 }
-input.onPinPressed(TouchPin.P0, function () {
-    strbtn = 1
-})
 function back () {
     pwm = 150
     sensors.DDMmotor(
@@ -66,6 +63,9 @@ function stop () {
     0
     )
 }
+input.onPinPressed(TouchPin.P2, function () {
+    strbtn = 1
+})
 function go () {
     pwm = 150
     sensors.DDMmotor(
