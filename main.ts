@@ -108,14 +108,14 @@ basic.forever(function () {
             if (operation == 1) {
                 right()
                 // 第一個路口右轉
-                basic.pause(1500)
+                basic.pause(2000)
                 go()
                 // 推動進去A區
                 basic.pause(500)
                 stop()
                 back()
                 // 從A區向後推動D區
-                basic.pause(2700)
+                basic.pause(2100)
                 stop()
                 go()
                 // 從D區到A區中間第一個路口
@@ -123,12 +123,12 @@ basic.forever(function () {
                 stop()
                 left()
                 // 從第一路口左轉朝向正前方
-                basic.pause(1250)
+                basic.pause(2000)
                 stop()
             } else if (operation == 2) {
                 right()
                 // 自第二路口轉向F區正前方
-                basic.pause(1600)
+                basic.pause(2000)
                 stop()
                 back()
                 // 自F區前方後退推動F區
