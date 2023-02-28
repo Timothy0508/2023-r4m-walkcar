@@ -108,18 +108,18 @@ basic.forever(function () {
             if (operation == 1) {
                 right()
                 // 第一個路口右轉
-                basic.pause(2000)
+                basic.pause(2100)
                 go()
                 // 推動進去A區
-                basic.pause(500)
+                basic.pause(900)
                 stop()
                 back()
                 // 從A區向後推動D區
-                basic.pause(2300)
+                basic.pause(2400)
                 stop()
                 go()
                 // 從D區到A區中間第一個路口
-                basic.pause(1300)
+                basic.pause(1200)
                 stop()
                 left()
                 // 從第一路口左轉朝向正前方
@@ -135,16 +135,16 @@ basic.forever(function () {
                 basic.pause(2000)
                 go()
                 // 從F區前進到第二路口
-                basic.pause(1200)
+                basic.pause(1500)
                 stop()
                 left()
                 // 從第二路口左轉朝向正前方
-                basic.pause(1100)
+                basic.pause(2000)
                 stop()
             } else if (operation == 3) {
                 right()
                 // 在第三路口右轉
-                basic.pause(1400)
+                basic.pause(1800)
                 stop()
                 back()
                 // 從C區正前方後退推動C區
@@ -187,7 +187,7 @@ basic.forever(function () {
                 basic.pause(1200)
                 back()
                 // 從E區後退推進ParkingPlace
-                basic.pause(2000)
+                basic.pause(3000)
                 stop()
                 basic.pause(999999999999999999)
             }
