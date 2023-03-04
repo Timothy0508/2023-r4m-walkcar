@@ -168,6 +168,7 @@ basic.forever(function () {
                 basic.pause(1200)
                 back()
                 // 從E區後退推進ParkingPlace
+                // 
                 basic.pause(3000)
                 stop()
                 basic.pause(999999999999999999)
