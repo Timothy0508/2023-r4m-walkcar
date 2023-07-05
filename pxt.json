@@ -1,5 +1,5 @@
 {
-    "name": "機關王基礎循跡車",
+    "name": "機關王循跡進階車",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -19,7 +19,7 @@
         "branch": "v1.1.90",
         "tag": "v1.1.90",
         "commits": "https://github.com/Microsoft/pxt-microbit/commits/c571c91f0ba665843e5ae54b15d6b9bb7c316265",
-        "target": "5.0.12",
+        "target": "6.0.15",
         "pxt": "4.1.49",
         "targetId": "microbit"
     },
